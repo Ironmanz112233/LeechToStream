@@ -87,7 +87,7 @@ if __name__ == "__main__" :
     #
     incoming_purge_message_handler = MessageHandler(
         incoming_purge_message_f,
-        filters=Filters.command(["purge"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["purge@LeeechXTbot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_purge_message_handler)
     #
@@ -178,13 +178,13 @@ if __name__ == "__main__" :
     #
     save_thumb_nail_handler = MessageHandler(
         save_thumb_nail,
-        filters=Filters.command(["SAVE_THUMBNAIL@LeeechXTbot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["SAVETHUMBNAIL@LeeechXTbot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(save_thumb_nail_handler)
     #
     clear_thumb_nail_handler = MessageHandler(
         clear_thumb_nail,
-        filters=Filters.command(["CLEAR_THUMBNAIL@LeeechXTbot"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["CLEARTHUMBNAIL@LeeechXTbot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(clear_thumb_nail_handler)
     #
